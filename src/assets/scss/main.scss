@@ -1,0 +1,24 @@
+// vendor
+
+@import "variables.scss";
+
+@import "mixin.scss";
+@import "inherit.scss";
+@import "font.scss";
+@import "layout.scss";
+
+//header
+@import "header.scss";
+//common
+@import "common.scss";
+//form
+@import "form.scss";
+// block
+@import "block.scss";
+
+//pages
+@import "./pages/home";
+@import "./pages/about";
+@import "./pages/contact";
+@import "./pages/partnership";
+@import "./pages/career";

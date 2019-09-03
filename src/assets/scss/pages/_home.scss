@@ -1,0 +1,36 @@
+.section {
+  &-welcome {
+    padding: 8rem 0 0;
+  }
+  &-technology {
+    @include full-width-section;
+    padding: 0;
+    .section-title {
+      margin-bottom: 4rem;
+    }
+  }
+  &-cta {
+    padding: 8.9rem 0 3rem;
+    .section-title {
+      margin-bottom: 5rem;
+    }
+  }
+  &-about {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media #{$mobile-small} {
+  .section {
+    &-welcome {
+      padding: 4rem 0 0;
+    }
+    &-cta {
+      padding: 4rem 0 0;
+      .section-title {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}

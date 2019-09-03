@@ -1,0 +1,42 @@
+//Inherit
+
+%icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+%icon-arrow-l {
+  content: "\e900";
+}
+%icon-arrow-r {
+  content: "\e901";
+}
+%icon-close {
+  content: "\e902";
+}
+%absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+%subtitle {
+  font-size: 3rem;
+  line-height: 1.33;
+  color: $violet;
+  font-family: $font-family-secondary;
+}
+@media #{$mobile} {
+  %subtitle {
+    font-size: 2rem;
+  }
+}

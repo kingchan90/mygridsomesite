@@ -1,0 +1,62 @@
+//Mixin
+@mixin fontFace($family, $src, $style: normal, $weight: normal) {
+  @font-face {
+    font-family: $family;
+    src: url("#{$src}.eot"); // IE9 compat
+    src: url("#{$src}.eot?#iefix") format("embedded-opentype"),
+      // IE8 and below
+        url("#{$src}.woff") format("woff"),
+      // standards
+        url("#{$src}.ttf") format("truetype"),
+      // Safari, Android, iOS
+        url("#{$src}.svg##{$family}") format("svg"); // legacy iOS
+
+    font-style: $style;
+    font-weight: $weight;
+  }
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+
+@mixin round($size) {
+  width: $size;
+  height: $size;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin image-cover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+@mixin full-width-section {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+%text-1 {
+  font-family: $font-family-secondary;
+  font-size: 8rem;
+  line-height: calc(100 / 80);
+}
