@@ -18,19 +18,14 @@
         <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="contact" />
           <label for="name">Name</label>
-          <input type="name" placeholder="Incognito" />
+          <input type="name" placeholder="Incognito" name="name" />
 
           <label for="email">Email</label>
-          <input type="email" placeholder="incognito@email.com" />
+          <input type="email" placeholder="incognito@email.com" name="email" />
 
           <label for="message">Message</label>
-          <textarea type="message" placeholder="Your message..." />
+          <textarea type="message" placeholder="Your message..." name="message" />
           <button type="submit">Submit</button>
-        </form>
-        <form name="ask-question" netlify netlify-honeypot="bot-field">
-          <input type="text" name="name" />
-          <input type="text" name="email" />
-          <textarea name="question"></textarea>
         </form>
       </div>
     </div>
