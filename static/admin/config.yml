@@ -1,7 +1,7 @@
 backend:
   name: github
-  branch: develop
-  repo: kingchan90/my-gridsome-site
+  branch: develop-2
+  repo: kingchan90/mygridsomesite
 
 media_folder: "static/images"
 public_folder: "static/images"
