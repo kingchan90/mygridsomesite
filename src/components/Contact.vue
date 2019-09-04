@@ -19,7 +19,6 @@
           action="/success"
           name="contact"
           motheod="post"
-          @submit.prevent="handleSubmit"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
@@ -40,6 +39,7 @@
           <textarea type="message" placeholder="Your message..." v-model="formData.message" />
           <button type="submit">Submit</button>
         </form>
+        {{this.formData }}
       </div>
     </div>
   </div>
@@ -72,8 +72,6 @@ export default {
         .join("&");
     },
     handleSubmit(e) {
-      console.log("submit start");
-
       fetch("/", {
         method: "POST",
         headers: {
