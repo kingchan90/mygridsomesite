@@ -1,19 +1,18 @@
 {
-	"name": "gridsome-starter-netlifycms",
-	"scripts": {
-		"build": "gridsome build",
-		"develop": "gridsome develop",
-		"explore": "gridsome explore"
-	},
-	"dependencies": {
-		"@gridsome/source-filesystem": "^0.3.0",
-		"@gridsome/transformer-remark": "^0.2.0",
-		"gridsome": "^0.6.4",
-		"node-sass": "^4.11.0",
-		"sass-loader": "^7.1.0"
-	},
-	"license": "MIT",
-	"devDependencies": {
-		"gridsome-plugin-netlify-cms": "^1.0.9"
-	}
+  "name": "gridsome-starter-netlifycms",
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "@gridsome/source-filesystem": "^0.3.0",
+    "@gridsome/transformer-remark": "^0.2.0",
+    "gridsome": "^0.6.4",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "gridsome-plugin-netlify-cms": "^1.0.9"
+  },
+  "license": "MIT",
+  "devDependencies": {}
 }
