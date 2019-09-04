@@ -15,13 +15,8 @@
       </div>
       <!-- Form -->
       <div class="Contact__Form">
-        <form
-          action="/thank-you"
-          name="contact"
-          method="post"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-        >
+        <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
           <label for="name">Name</label>
           <input type="name" placeholder="Incognito" />
 
@@ -31,6 +26,11 @@
           <label for="message">Message</label>
           <textarea type="message" placeholder="Your message..." />
           <button type="submit">Submit</button>
+        </form>
+        <form name="ask-question" netlify netlify-honeypot="bot-field">
+          <input type="text" name="name" />
+          <input type="text" name="email" />
+          <textarea name="question"></textarea>
         </form>
       </div>
     </div>
