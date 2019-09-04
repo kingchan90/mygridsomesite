@@ -16,30 +16,22 @@
       <!-- Form -->
       <div class="Contact__Form">
         <form
-          action="/success"
+          action="/thank-you"
           name="contact"
-          motheod="post"
+          method="post"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
-          <input type="hidden" name="form-name" value="contact" />
-          <p hidden>
-            <label>
-              Don’t fill this out:
-              <input name="bot-field" />
-            </label>
-          </p>
           <label for="name">Name</label>
-          <input type="name" placeholder="Incognito" v-model="formData.name" />
+          <input type="name" placeholder="Incognito" />
 
           <label for="email">Email</label>
-          <input type="email" placeholder="incognito@email.com" v-model="formData.email" />
+          <input type="email" placeholder="incognito@email.com" />
 
           <label for="message">Message</label>
-          <textarea type="message" placeholder="Your message..." v-model="formData.message" />
+          <textarea type="message" placeholder="Your message..." />
           <button type="submit">Submit</button>
         </form>
-        {{this.formData }}
       </div>
     </div>
   </div>
@@ -50,42 +42,12 @@ import Contact from "~/data/Contact.yml";
 import SocialMedia from "~/data/SocialMedia.yml";
 
 export default {
-  data() {
-    return {
-      formData: {}
-    };
-  },
   computed: {
     Contact() {
       return Contact;
     },
     SocialMedia() {
       return SocialMedia;
-    }
-  },
-  methods: {
-    encode(data) {
-      return Object.keys(data)
-        .map(
-          key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-        )
-        .join("&");
-    },
-    handleSubmit(e) {
-      fetch("/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-          "Access-Control-Allow-Origin": "*"
-        },
-        mode: "no-cors",
-        body: this.encode({
-          "form-name": e.target.getAttribute("name"),
-          ...this.formData
-        })
-      })
-        .then(() => this.$router.push("/success"))
-        .catch(error => alert(error));
     }
   }
 };
