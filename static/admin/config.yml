@@ -3,8 +3,8 @@ backend:
   branch: develop-2
   repo: kingchan90/mygridsomesite
 
-media_folder: "static/images"
-public_folder: "static/images"
+media_folder: "admin/media"
+public_folder: "admin/images"
 
 collections:
   - name: "blogs"
