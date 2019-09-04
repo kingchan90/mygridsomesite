@@ -1,15 +1,11 @@
-# Default starter for Gridsome
+# Gridsome Starter NetlifyCMS
 
-This is the project you get when you run `gridsome create new-project`.
+Now modify your website directly from NetlifyCMS, no need to mess around with coding. 😅
 
-### 1. Install Gridsome CLI tool if you don't have
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/mittalyashu/gridsome-starter-netlifycms)
 
-`npm install --global @gridsome/cli`
+## Donate
 
-### 2. Create a Gridsome project
+I've put a lot of time and effort into making **Gridsome Starter NetlifyCMS** project. If you love it, you can Become a Patron. I promise it will be a good investment 😉.
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
-# mygridsomesite
+[![Become a Patron](https://i.imgur.com/wYOr44L.png)](https://www.patreon.com/bePatron?u=8494594)
